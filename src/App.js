@@ -219,9 +219,9 @@ const App = () => {
       name: place.name,
       rating: place.rating,
       open_now: place.opening_hours?.open_now,
-      // Use placeholder for photos (Google Photos API requires separate handling)
+      // Use our new API proxy to fetch the actual Google photo
       photo: place.photos
-        ? "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+        ? `/api/photo?ref=${place.photos[0].photo_reference}`
         : "https://via.placeholder.com/400x300?text=No+Image"
     }));
   };
