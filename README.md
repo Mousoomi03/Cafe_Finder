@@ -7,18 +7,32 @@ A **React-based web application** that helps users discover nearby cafes using a
 
 ## ✨ Features
 
-* **Nearby Discovery:** Automatically locates cafes within a 1.5km radius using the **Google Places API**.
+* **Real-time Geolocation:** Automatically detects the user's current position to provide relevant local results.
+* **Interactive Mapping:** Full integration with Google Maps for visual navigation.
 * **Swipe Interface:** Intuitive card-based UI where users swipe right to "Like" (save) and left to "Pass".
 * **Saved Favorites:** View a curated list of all your saved cafes.
 * **Responsive Design:** Fully optimized for mobile and desktop devices using **Tailwind CSS**.
 * **Real-time Data:** Displays ratings, opening status, and photos directly from Google Maps.
+* **Mobile-First Design:** Fully responsive UI built to work perfectly on smartphones and desktops.
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Technical Stack
+- **Frontend:** React.js (Hooks & Context API)
+- **APIs:** Google Maps JavaScript API, Google Places API
+- **Styling:** CSS3 (Flexbox/Grid)
+- **State Management:** Functional components with `useState` and `useEffect` hooks.
 
+---
+## 🏗️ How it Works
+The application workflow involves:
+1. **Permission:** Requesting user geolocation via the Browser API.
+2. **Fetch:** Calling the Google Places Library to search for `type: cafe` within a specified radius.
+3. **Render:** Dynamically rendering custom map markers and a searchable sidebar list.
+4. **State Management:** Handling API responses efficiently to prevent unnecessary re-renders and optimize performance.
 
-### Prerequisites
+---
+## Prerequisites
 
 * **Node.js** (v14 or higher)
 * **npm** (v6 or higher)
