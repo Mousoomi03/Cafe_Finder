@@ -23,30 +23,6 @@ Follow these instructions to get the project up and running on your local machin
 * **npm** (v6 or higher)
 * **Google Maps API Key** with the *Places API* enabled.
 
-### Installation
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/yourusername/cafe-finder.git
-cd cafe-finder
-
-```
-
-
-2. **Install dependencies:**
-```bash
-npm install
-
-```
-
-
-3. **Start the development server:**
-```bash
-npm start
-
-```
-
-
 
 ---
 
@@ -72,7 +48,3 @@ To deploy on Vercel:
 1. Push your code to GitHub.
 2. Import the project into Vercel.
 3. Add your API Key as an **Environment Variable** in the Vercel dashboard settings to keep it secure.
-
----
-
-**Would you like me to generate a `package.json` file snippet or a `.env` configuration guide to go along with this?**
